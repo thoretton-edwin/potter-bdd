@@ -1,83 +1,18 @@
-# cucumber-ts-starter
+KATA reference : https://pierregillon.com/bdd-lexemple-du-kata-potter/
 
-[![Build Status](https://travis-ci.org/hdorgeval/cucumber6-ts-starter.svg?branch=master)](https://travis-ci.org/hdorgeval/cucumber6-ts-starter)
-[![Build status](https://ci.appveyor.com/api/projects/status/sp6mbbyjgbw7sc9o?svg=true)](https://ci.appveyor.com/project/hdorgeval/cucumber6-ts-starter)
 
-Starter project to write and debug cucumber-js v6 features in TypeScript language.
+Énoncé du katta Potter
 
-!!! this template is intended to work with cucumber-js v6 only. For cucumber-js v7 this template has been migrated in [cucumber7-ts-starter](https://github.com/hdorgeval/cucumber7-ts-starter) !!!
+Once upon a time there was a series of 5 books about a very English hero called Harry.
+(At least when this Kata was invented, there were only 5. Since then they have multiplied).
+Children all over the world thought he was fantastic, and, of course, so did the publisher.
+So in a gesture of immense generosity to mankind, (and to increase sales) they set up the 
+following pricing model to take advantage of Harry’s magical powers.
 
-## After cloning the repo
+One copy of any of the five books costs 8 EUR. If, however, you buy two different books from the series, you get a 5% discount on those two books. 
+If you buy 3 different books, you get a 10% discount. With 4 different books, you get a 20% discount. If you go the whole hog, and buy all 5, you get a huge 25% discount. 
+Note that if you buy, say, four books, of which 3 are different titles, you get a 10% discount on the 3 that form part of a set, but the fourth book still costs 8 EUR.
 
-* run the command `npm install`.
+Potter mania is sweeping the country and parents of teenagers everywhere are queuing up with shopping baskets overflowing with Potter books. 
+Your mission is to write a piece of code to calculate the price of any conceivable shopping basket, giving as big a discount as possible.
 
-## To execute the tests locally
-
-* run the command `npm test`.
-
-## To debug a scenario in Visual Studio Code
-
-* tag the scenario with `@debug`
-* set the breakpoints in the typescript code
-* Start debugging
-
-## To run only specific scenarios
-
-* tag the scenario(s) with `@only`
-* run the command `npm run only`.
-
-## To ignore a scenario
-
-* tag the scenario with `@ignore`
-
-## To check for typescript, linting and gherkin errors
-
-* run the command `npm run build`.
-
-## To view the html report of the last run
-
-* run the command `npm run report`.
-
-## To view the steps usage
-
-* run the command `npm run steps-usage`.
-
-## To create a new step
-
-* first write the Given/When/Then sentence:
-  ```gherkin
-  Given I push "foo" on "bar"
-  ```
-
-* tag the scenario with `@only`
-
-* run the npm script:
-  ```sh
-  npm run snippets
-  ```
-
-* the script will report the missing step(s): you just need to copy and paste them in the step definitions file:
-
-  ```sh
-  Given('I push {string} on {string}', async function (string, string2) {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
-  });
-  ```
-
-## To use a custom option on the CLI
-
-* add your custom option to the CLI that starts cucumber:
-```sh
-./node_modules/.bin/cucumber-js features/**/*.feature --foo=bar 
-```
-* use it at runtime:
-```js
-if (this.cliArgs.foo === 'bar') {
-  // custom code for option --foo=bar
-}
-```
-
-## To use a custom World Objet
-
-* cutomize the given Custom World Object : [custom-world](world/custom-world.ts)
